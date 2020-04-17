@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>FINAL PROJECT</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel=stylesheet href="css/layout.css">
+  <script>
+  
+  
+  
+   function button1(){
+var image=document.getElementById("image_display");
+image.src="images/taj.jpg";
+document.appendChild(image);
+    
+        }
+        function button2(){
+var image=document.getElementById("image_display");
+image.src="images/usa.jpg";
+document.appendChild(image);
+    
+        }
+        function button3(){
+var image=document.getElementById("image_display");
+image.src="images/paris.jpg";
+document.appendChild(image);
+    
+        }
+        function button4(){
+var image=document.getElementById("image_display");
+image.src="images/london.jpg";
+document.appendChild(image);
+    
+        }
+        function button5(){
+var image=document.getElementById("image_display");
+image.src="images/switzerland.jpg";
+document.appendChild(image);
+    
+        }
+
+        function button6(){
+  
+  var h  =  document.getElementById("image_display").height ;
+  var w =  document.getElementById("image_display").width ;
+  
+  if( h > 0 && w > 0){
+  document.getElementById("image_display").height = document.getElementById("image_display").height- 10;
+  document.getElementById("image_display").width = document.getElementById("image_display").width - 10 ;
+}
+}
+function button7(){
+  var h  =  document.getElementById("image_display").height ;
+  var w =  document.getElementById("image_display").width ;
+  if(h < 500 && w < 500){
+  document.getElementById("image_display").height = document.getElementById("image_display").height + 10;
+  document.getElementById("image_display").width = document.getElementById("image_display").width + 10 ;
+}
+}
+function button8()
+            {    
+                document.getElementById('image_display').width="250";
+                document.getElementById('image_display').height="140";
+            }
+
+  </script>
+
+</head>
+<body>
+        
+        
+<h1>FAVOURITE DESTINATIONS</h1>
+<div class="imageButtons">
+                <p>click buttons to display images</p> 
+</br>
+        <button onclick="button1()">India</button>
+        <button onclick="button2()" >USA</button>
+              <button onclick="button3()">Paris</button>
+              <button onclick="button4()">London</button>
+              <button onclick="button5()">Switzerland</button>
+              
+              
+            
+      </div>
+       
+<div class="row">
+        
+               
+    <div class="col-sm-3">
+            
+       <button onclick="button6()" type="button" class="btn btn-primary">ZoomOut</button><br>
+       <br>
+       <br>
+       <br>
+       <button onclick="button7()" type="button" class="btn btn-primary">ZoomIn</button>
+       <br>
+       <br>
+       <br>
+       <button onclick="button8()" type="button" class="btn btn-primary">Resize to original size</button>
+    </div>
+    <div class="col-sm-8">
+     <img id="image_display" width="250"/>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
